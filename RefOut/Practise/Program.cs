@@ -22,6 +22,7 @@ namespace Practise
             Console.WriteLine("Previous value of integer i:" + i.ToString());
             string test = GetNextNameByOut(out i);
             Console.WriteLine("Current value of integer i:" + i.ToString());
+            Console.Read();
         }
     }
 }
