@@ -6,23 +6,22 @@ using System.Threading.Tasks;
 
 namespace Practise
 {
-
-    class Program
+    class Out
     {
-        public static string GetNextNameByOut(out int id)
+        public static string GetNextName(ref int id)
         {
-            id = 5;
             string returnText = "Next-" + id.ToString();
+            id += 1;
             return returnText;
         }
-        /*
+
         static void Main(string[] args)
         {
-            int i = 0;
+            int i = 1;
             Console.WriteLine("Previous value of integer i:" + i.ToString());
-            string test = GetNextNameByOut(out i);
+            string test = GetNextName(ref i);
             Console.WriteLine("Current value of integer i:" + i.ToString());
-            Console.Read();
-        }*/
+        }
     }
+
 }
